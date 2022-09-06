@@ -9,7 +9,7 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-function Seo({ description, title, children }) {
+function Seo({ description, title, children }: { description: string, title: string, children?: any }) {
   const { site } = useStaticQuery(
     graphql`
       query {
