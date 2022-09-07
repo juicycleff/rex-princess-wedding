@@ -11,6 +11,8 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+import 'gestalt/dist/gestalt.css';
+import 'gestalt-datepicker/dist/gestalt-datepicker.css';
 
 const Layout = ({ children }: { children: any }) => {
   const data = useStaticQuery(graphql`
